@@ -344,17 +344,18 @@ input {
   section {
     max-width: 65rem;
     grid-template-columns: 1fr 1fr;
+    max-height: 29rem;
   }
   .woman {
     width: 30rem;
-    transform: translate(-29%, 33%);
+    transform: translate(-29%, 12%);
   }
   .texto {
-    font-size: calc(0.5em + 0.6vw);
+    font-size: calc(0.6em + 0.6vw);
     width: 100%;
   }
   .ask {
-    font-size: calc(0.7em + 0.5vw);
+    font-size: calc(0.7em + 0.6vw);
     font-weight: bold;
   }
   .title {
@@ -363,7 +364,10 @@ input {
   .question {
     margin-right: 5rem;
   }
+  .questions{
+    transform: translate(1rem, -3rem);
+  }
   .shadown {
-    transform: translate(-21%, -1%);
+    transform: translate(-21%, -38%);
   }
 }
