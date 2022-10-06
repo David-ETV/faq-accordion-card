@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Montserrat:wght@600&family=Outfit:wght@300;400;600&family=Overpass:wght@400;700&family=Red+Hat+Display:ital,wght@0,700;0,900;1,500&display=swap");
+
+:root {
+  --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+  --Soft-red: hsl(14, 88%, 65%);
+
+  /* Background-gradient */
+  --Soft-violet: hsl(273, 75%, 66%);
+  --Soft-blue: hsl(240, 73%, 65%);
+
+  /* Text */
+  --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --Dark-grayish-blue: hsl(240, 6%, 50%);
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 21rem;
+  align-items: center;
+  background: linear-gradient(var(--Soft-violet), var(--Soft-blue));
+  min-height: 100vh;
+  line-height: 1;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 0.75rem;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  max-width: 21rem;
+  background-color: #fffffc;
+  margin: 1.875rem;
+  border-radius: 1rem;
+}
+
+.images {
+  width: 15rem;
+}
+.woman {
+  position: relative;
+
+  top: 0.4rem;
+  transform: translate(0%, -74%);
+}
+.shadown {
+  width: 15rem;
+  position: relative;
+  transform: translate(3%, -197%);
+}
+.title {
+  text-align: center;
+  font-size: calc(1.7em + 2vw);
+  font-weight: bold;
+  padding: 3rem 0;
+  margin-top: -15rem;
+}
+.questions {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.question {
+  border-bottom: 1px solid rgba(145, 143, 143, 0.349);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+i {
+  float: right;
+  font-size: 0.9rem;
+  margin: 0 1rem;
+  color: rgb(163, 97, 97);
+}
+
+.fa-chevron-up:before,
+.texto,
+input {
+  display: none;
+}
+.texto {
+  width: 90%;
+  padding: 0.8rem 3rem 0.5rem 0;
+  line-height: 1.5;
+  color: var(--Dark-grayish-blue);
+  background-color: #fffffc;
+  font-size: calc(0.7em + 1vw);
+}
+.ask {
+  color: var(--Dark-grayish-blue);
+  font-size: calc(0.8em + 0.9vw);
+  width: 2rem;
+  width: 100%;
+}
+.ask:hover {
+  color: var(--Soft-red);
+  cursor: pointer;
+}
+#q-1:checked ~ label .ask,
+#q-2:checked ~ label .ask,
+#q-3:checked ~ label .ask,
+#q-4:checked ~ label .ask,
+#q-5:checked ~ label .ask {
+  color: var(--Very-dark-desaturated-blue);
+  font-weight: 700;
+}
+#q-1:checked ~ label .texto,
+#q-2:checked ~ label .texto,
+#q-3:checked ~ label .texto,
+#q-4:checked ~ label .texto,
+#q-5:checked ~ label .texto {
+  display: block;
+}
+
+#q-1:checked ~ label .fa-chevron-down:before,
+#q-2:checked ~ label .fa-chevron-down:before,
+#q-3:checked ~ label .fa-chevron-down:before,
+#q-4:checked ~ label .fa-chevron-down:before,
+#q-5:checked ~ label .fa-chevron-down:before {
+  display: none;
+}
+#q-1:checked ~ label .fa-chevron-up::before,
+#q-2:checked ~ label .fa-chevron-up::before,
+#q-3:checked ~ label .fa-chevron-up::before,
+#q-4:checked ~ label .fa-chevron-up::before,
+#q-5:checked ~ label .fa-chevron-up::before {
+  display: flex;
+  color: var(--Soft-red);
+}
+@media (max-width: 375px) {
+  .fas {
+    margin-left: 0rem;
+    transform: translate(1.5rem, -1rem);
+  }
+}
+
+@media (min-width: 775px) {
+  section {
+    display: grid;
+    grid-template-columns: 1fr 23rem;
+    max-width: 45rem;
+    margin: 0 3rem;
+    padding-bottom: 3rem;
+  }
+  .title {
+    margin: 0;
+    text-align: left;
+  }
+  .images {
+    width: 20rem;
+  }
+  .woman {
+    width: 24rem;
+    transform: translate(-36%, 27%);
+  }
+  .ask {
+    font-size: calc(0.7em + 0.8vw);
+  }
+  .shadown {
+    width: 24rem;
+    position: relative;
+    transform: translate(-36%, -15%);
+  }
+  .texto {
+    width: 90%;
+    font-size: calc(0.5em + 0.8vw);
+  }
+  .question {
+    margin-right: 0.5rem;
+  }
+  .fas {
+    transform: translate(3rem, -1rem);
+  }
+  .questions {
+    padding-right: 4rem;
+  }
+}
+
+@media (min-width: 1015px) {
+  section {
+    max-width: 65rem;
+    grid-template-columns: 1fr 1fr;
+  }
+  .woman {
+    width: 30rem;
+    transform: translate(-29%, 33%);
+  }
+  .texto {
+    font-size: calc(0.5em + 0.6vw);
+    width: 100%;
+  }
+  .ask {
+    font-size: calc(0.7em + 0.5vw);
+    font-weight: bold;
+  }
+  .title {
+    font-size: calc(1.5em + 1vw);
+  }
+  .question {
+    margin-right: 5rem;
+  }
+  .shadown {
+    transform: translate(-21%, -1%);
+  }
+}

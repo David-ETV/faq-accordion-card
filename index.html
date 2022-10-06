@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>FAQ Accordion Card</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="images">
+          <img
+            src="./images/illustration-woman-online-mobile.svg"
+            alt="illustration-woman"
+            class="woman"
+          />
+          <img
+            src="./images/bg-pattern-mobile.svg"
+            alt="bg-pattern-mobile"
+            class="shadown"
+          />
+        </div>
+
+        <div class="questions">
+          <h1 class="title">FAQ</h1>
+          <div class="question">
+            <input type="radio" name="my-input" id="other" />
+            <input type="radio" name="my-input" id="q-2" />
+            <label for="q-2"
+              ><span class="ask">How many team members can I invite?</span
+              ><label for="q-2" class="bnt-down"
+                ><i class="fas fa-chevron-down bnt-dow"></i></label
+            ></label>
+            <label for="other" class="btn-up"
+              ><i class="fas fa-chevron-up"></i
+            ></label>
+            <label
+              ><p class="texto">
+                You can invite up to 2 additional users on the Free plan. There
+                is no limit on team members for the Premium plan.
+              </p></label
+            >
+          </div>
+
+          <div class="question">
+            <input type="radio" name="my-input" id="q-1" checked />
+            <label for="q-1"
+              ><span class="ask">What is the maximum file upload size?</span
+              ><label for="q-1"
+                ><i class="fas fa-chevron-down bnt-dow"></i></label
+            ></label>
+            <label for="other" class="btn-up"
+              ><i class="fas fa-chevron-up btn-up"></i
+            ></label>
+            <label
+              ><p class="texto">
+                No more than 2GB. All files in your account must fit your
+                allotted storage space.
+              </p></label
+            >
+          </div>
+
+          <div class="question">
+            <input type="radio" name="my-input" id="q-3" />
+            <label for="q-3"
+              ><span class="ask">How do I reset my password?</span
+              ><label for="q-3"
+                ><i class="fas fa-chevron-down bnt-dow"></i></label
+            ></label>
+            <label for="other" class="btn-up"
+              ><i class="fas fa-chevron-up btn-up"></i
+            ></label>
+            <label
+              ><p class="texto">
+                Click “Forgot password” from the login page or “Change password”
+                from your profile page. A reset link will be emailed to you.
+              </p></label
+            >
+          </div>
+
+          <div class="question">
+            <input type="radio" name="my-input" id="q-4" />
+            <label for="q-4"
+              ><span class="ask">Can I cancel my subscription?</span
+              ><label for="q-4"
+                ><i class="fas fa-chevron-down bnt-dow"></i></label
+            ></label>
+            <label for="other" class="btn-up"
+              ><i class="fas fa-chevron-up btn-up"></i
+            ></label>
+            <label
+              ><p class="texto">
+                Yes! Send us a message and we’ll process your request no
+                questions asked.
+              </p></label
+            >
+          </div>
+
+          <div class="question">
+            <input type="radio" name="my-input" id="q-5" />
+            <label for="q-5"
+              ><span class="ask">Do you provide additional support?</span
+              ><label for="q-5"
+                ><i class="fas fa-chevron-down bnt-dow"></i></label
+            ></label>
+            <label for="other" class="btn-up"
+              ><i class="fas fa-chevron-up btn-up"></i
+            ></label>
+            <label
+              ><p class="texto">
+                Chat and email support is available 24/7. Phone lines are open
+                during normal business hours.
+              </p></label
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
